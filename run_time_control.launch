@@ -1,0 +1,9 @@
+<launch>
+
+<node pkg="aut_sys" name="motorDriver" type="motorDriver.py"/>
+
+<!-- Insert below any other node to run after the drivers  -->
+
+<node pkg="aut_sys" name="time_control" type="time_control.py" output="screen"/>
+
+</launch>

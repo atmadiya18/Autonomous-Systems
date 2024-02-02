@@ -1,0 +1,11 @@
+<launch>
+
+<node pkg="aut_sys" name="distanceDriver" type="distanceDriver.py"/>
+<node pkg="aut_sys" name="lineDriver" type="lineDriver.py"/>
+<node pkg="aut_sys" name="motorDriver" type="motorDriver.py"/>
+
+<!-- Insert below any other node to run after the drivers  -->
+
+<node pkg="aut_sys" name="line_follower_memory" type="line_follower_memory.py" output="screen"/>
+
+</launch>
